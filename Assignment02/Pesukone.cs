@@ -12,7 +12,13 @@ namespace Assignment02
         public bool IsOn { get; set; }
         public int Program { get; set; }
         public bool Sling { get; set; }
-        // constructors, ei pakollinen
+
+        // constructor
+        public Pesukone()
+        {
+            IsOn = false;
+        }
+
 
         // methods
         public void PrintDetails()
@@ -20,12 +26,6 @@ namespace Assignment02
             Console.WriteLine("Power: " + IsOn);
             Console.WriteLine("Program: " + Program);
             Console.WriteLine("Sling: " + Sling);
-        }
-
-        public void Power(bool set)
-        {
-            IsOn = false;
-            Sling = false;
         }
     }
 }
